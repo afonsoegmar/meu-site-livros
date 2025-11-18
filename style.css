@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* HEADER */
+header {
+    background: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SEÇÕES */
+section {
+    padding: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+table th, table td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #444;
+    color: white;
+}
+
+/* FORMULÁRIO */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+/* ======== HOME - CARDS ======== */
+.home {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.cards-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 12px;
+    color: #1a237e;
+}
+
+.card p {
+    color: #444;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
